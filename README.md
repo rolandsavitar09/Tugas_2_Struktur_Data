@@ -58,6 +58,7 @@ for kota in KotaJawaTimur :
     JawaTimur.tambahKota(kota) 
 
 #aturan untuk input nama kota
+
 print("""
 *HARAP MEMASUKKAN NAMA KOTA SESUAI DENGAN DAFTAR DI BAWAH (huruf besar dan huruf kecilnya)
       
