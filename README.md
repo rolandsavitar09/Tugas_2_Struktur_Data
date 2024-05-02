@@ -58,3 +58,32 @@ for kota in KotaJawaTimur :
     JawaTimur.tambahKota(kota) 
 
 #aturan untuk input nama kota
+print("""
+*HARAP MEMASUKKAN NAMA KOTA SESUAI DENGAN DAFTAR DI BAWAH (huruf besar dan huruf kecilnya)
+      
+=====DAFTAR KOTA=====
+""")
+
+#menambahkan jarak antar kota yang dilewati
+JawaTimur.tambahJalan("Surabaya", "Sidoarjo", "Jarak: 32km")
+JawaTimur.tambahJalan("Sidoarjo", "Blitar", "Jarak: 125km")
+JawaTimur.tambahJalan("Sidoarjo", "Malang", "Jarak: 67km")
+JawaTimur.tambahJalan("Blitar", "Malang", "Jarak: 78km")
+JawaTimur.tambahJalan("Blitar", "Trenggalek", "Jarak: 76km")
+JawaTimur.tambahJalan("Blitar", "Ponorogo", "Jarak: 112km")
+JawaTimur.tambahJalan("Malang", "Tulungagung", "Jarak: 108km")
+JawaTimur.tambahJalan("Tulungagung", "Bojonegoro", "Jarak: 175km")
+JawaTimur.tambahJalan("Trenggalek", "Ngawi", "Jarak: 112km")
+JawaTimur.tambahJalan("Trenggalek", "Madiun", "Jarak: 80km")
+JawaTimur.tambahJalan("Madiun", "Ngawi", "Jarak: 34km")
+JawaTimur.tambahJalan("Ngawi", "Bojonegoro", "Jarak: 60km")
+
+#memanggil metode printKota untuk menampilkan daftar kota
+JawaTimur.printKota()
+
+#variabel untuk menginput lokasi saat ini
+lokasi = input("lokasi anda sekarang : ")
+#variabel untuk memilih lokasi yang di tuju
+pilihlokasitujuan = input("tujuan yang ingin di tuju : ")
+#menampilkan jarak tempuh dari kota lokasi ke kota tujuan 
+JawaTimur.ruteTempuh(lokasi, pilihlokasitujuan)
